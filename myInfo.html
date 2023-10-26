@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Input Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <img src="squ.png"> <br>
+    <time datetime="2023-10-17T7:30">7:30 PM</time>
+
+    <h1>User Input Form</h1>
+
+    <form action="https://httpbin.org/get" method="get">
+      <input type="hidden" name="Malak Bader  :D">
+      <div class="section">
+        <h3>Personal Particulars</h3>
+        <!-- User Name Input -->
+        <div class="input-box">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required="required">
+        </div>
+
+        <!-- Password Input -->
+        <div class="input-box">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required="required">
+        </div>
+
+        <!-- Gender Selection -->
+        <div class="input-box">
+          <span>Gender:</span>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </div>
+
+        <!-- Age Selection -->
+        <div class="input-box">
+          <label for="age">Age:</label>
+          <select id="age" name="age" size="3">
+            <option value="0" selected="selected">Under 1 year old</option>
+            <option value="1">1 year old</option>
+            <option value="2">2 years old</option>
+            <option value="3">3 years old</option>
+            <option value="4">4 years old</option>
+            <option value="5">5 years old</option>
+          </select>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="section">
+        <h3>Languages</h3>
+        <!-- Language Selection -->
+        <div class="input-box">
+          <input type="checkbox" id="java" name="languages[]" value="Java">
+          <label for="java">Java</label>
+          <input type="checkbox" id="c_c_plus_plus" name="languages[]" value="C/C++">
+          <label for="c_c_plus_plus">C/C++</label>
+          <input type="checkbox" id="c_sharp" name="languages[]" value="C#">
+          <label for="c_sharp">C#</label>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="section">
+        <h3>Instructions</h3>
+        <!-- Instruction Textarea -->
+        <div class="input-box">
+          <textarea id="instructions" name="instructions" form="usrform">Enter your instructions...</textarea>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="section">
+        <h3>Other Instructions</h3>
+        <!-- New Input Types -->
+        <div class="input-box">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date">
+        </div>
+
+        <div class="input-box">
+          <label for="month">Month:</label>
+          <input type="month" id="month" name="month">
+        </div>
+
+        <div class="input-box">
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time">
+        </div>
+
+        <div class="input-box">
+          <label for="week">Week:</label>
+          <input type="week" id="week" name="week">
+        </div>
+
+        <div class="input-box">
+          <label for="image">Image:</label>
+          <input type="file" id="image" name="image">
+        </div>
+
+        <div class="input-box">
+          <label for="url">URL:</label>
+          <input type="url" id="url" name="url">
+        </div>
+
+        <div class="input-box">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div class="input-box">
+          <label for="tel">Phone Number:</label>
+          <input type="tel" id="tel" name="tel">
+        </div>
+
+        <div class="input-box">
+          <label for="number">Number:</label>
+          <input type="number" id="number" name="number">
+        </div>
+
+        <div class="input-box">
+          <label for="range">Range:</label>
+          <input type="range" id="range" name="range" min="0" max="100">
+        </div>
+
+        <div class="input-box">
+          <label for="color">Color:</label>
+          <input type="color" id="color" name="color">
+        </div>
+      </div>
+
+      <hr>
+
+      <div class='buttons'>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Clear">
+        </div>
+      </div>
+    </form>
+
+  </div>
+</body>
+</html>
+
